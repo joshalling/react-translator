@@ -12,10 +12,10 @@ export class Translator extends React.Component
 
         this.translate = this.translate.bind(this);
         this.getTranslations = this.get_translation_page.bind(this);
-        this.getTranslations(this.props.lang, this.props.url);
+        this.getTranslations(this.props.url);
     }
 
-    getTranslations(lang, url) {
+    getTranslations(url) {
         let self = this;
         let url = url;
         fetch(url, {
@@ -57,7 +57,6 @@ export class Translator extends React.Component
     translate(key, vars)
     {
         let blocks = this.state.blocks;
-        let blocks_en = this.state.blocks_en;
         let translation;
         if (key in blocks) {
             translation = Translator.translationGenerate(blocks[key], vars);
