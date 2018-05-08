@@ -30,13 +30,13 @@ export class Translator extends React.Component
                 }
                 return res.json()
             })
-            .then(json =>
+            .then((json) =>
             {
                 self.setState({blocks: json});
-            })
-            .catch(error =>
+            },
+            (error) =>
             {
-                display_message(error.statusText, true);
+                alert(error.message);
             });
     }
 
