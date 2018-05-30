@@ -1,0 +1,25 @@
+{
+  "name": "react-translator",
+  "version": "1.0.0",
+  "description": "Simple react component for pulling in jsoon encoded translations and translating text in your react projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshalling/react-translator.git"
+  },
+  "keywords": [
+    "react",
+    "translations",
+    "translator",
+    "localization"
+  ],
+  "author": "Josh Alling <joshralling@gmail.com> (http://joshalling.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshalling/react-translator/issues"
+  },
+  "homepage": "https://github.com/joshalling/react-translator#readme"
+}
