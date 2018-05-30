@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Translator extends React.Component
+class Translator extends React.Component
 {
     constructor(props)
     {
@@ -17,7 +17,6 @@ export class Translator extends React.Component
 
     getTranslations(url) {
         let self = this;
-        let url = url;
         fetch(url, {
             method: 'POST',
             credentials: 'same-origin'
@@ -78,3 +77,5 @@ export class Translator extends React.Component
         )
     }
 }
+
+export default Translator;
